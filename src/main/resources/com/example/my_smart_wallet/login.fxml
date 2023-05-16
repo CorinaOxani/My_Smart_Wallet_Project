@@ -14,19 +14,19 @@
   <padding>
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
   </padding>
-   <TextField fx:id="usernameTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="201.0" promptText="Username" />
+   <TextField fx:id="UsernameTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="201.0" promptText="Username" />
 
   <Label fx:id="welcomeText" alignment="TOP_CENTER" prefHeight="44.0" prefWidth="173.0" text="Username :" translateX="-200.0" translateY="-50.0">
       <font>
          <Font name="Leelawadee UI" size="24.0" />
       </font></Label>
-   <PasswordField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="194.0" translateY="-45.0" />
-    <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0"
-          prefWidth="229.0" spacing="30.0" translateX="5.0">
-        <CheckBox fx:id="ClientBox" mnemonicParsing="false" onAction="#handleClientBox" text="Client"/>
-        <CheckBox fx:id="ReprBox" mnemonicParsing="false" onAction="#handleReprBox" prefHeight="18.0" prefWidth="146.0"
-                  text="Bank Representative"/>
-    </HBox>
+   <PasswordField fx:id="PasswordTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.0" prefWidth="194.0" translateY="-45.0" />
+   <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="229.0" spacing="30.0" translateX="5.0">
+      <children>
+         <CheckBox fx:id="ClientBox" mnemonicParsing="false" onAction="#handleClientBox" text="Client" />
+         <CheckBox fx:id="ReprBox" mnemonicParsing="false" onAction="#handleReprBox" prefHeight="18.0" prefWidth="146.0" text="Bank Representative" />
+      </children>
+   </HBox>
    <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="41.0" prefWidth="81.0" text="Role :" translateX="-200.0" translateY="-55.0">
       <font>
          <Font name="Leelawadee UI Semilight" size="24.0" />
@@ -37,7 +37,7 @@
          <Font size="24.0" />
       </font>
    </Label>
-  <Button fx:id="loginButton" prefHeight="37.0" prefWidth="183.0" style="-fx-background-color: #17D3F0;" text="Login" />
+  <Button fx:id="LoginButton" prefHeight="37.0" prefWidth="183.0" style="-fx-background-color: #17D3F0;" text="Login" />
    <Label prefHeight="31.0" prefWidth="168.0" text="If you don't have an account" />
    <Button fx:id="RegistrationButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" style="-fx-background-color: #17D3F0;" text="Register" />
 </VBox>

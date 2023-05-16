@@ -20,10 +20,6 @@ public class LoginController{
     public CheckBox ReprBox;
     @FXML
     private Label loginMessageLabel;
-    @FXML
-    public void loginButtonOnAction(ActionEvent event){
-        loginMessageLabel.setText("Invalid Login . Please try again");
-    }
 
     @FXML
     private void handleClientBox(){
